@@ -27,8 +27,6 @@ ul{
     flex-direction: row;
     justify-content: center;
     width: 100%;
-   
-      
 }
 .l{
     display:flex;
@@ -41,4 +39,5 @@ li{
 }
 li a{
     color: white;
+    text-decoration: none;
 }

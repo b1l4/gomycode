@@ -1,38 +1,48 @@
 <!DOCTYPE html>
-<head></head>
-<body>
-<ul>
-    <li>
 
-        <a href="index.html">index</a>
-    </li>
-    <li>
-        <a href="courses.html">courses</a> 
-    </li>
-    <li>
-      <a href="contact.html">contact</a>  
-    </li>
+<head>
+    <link rel="stylesheet" href="css/styl.css">
     
-</ul>
-<table>
-    <th><button>bold</button></th>
-    <th><button>underline</button></th>
-    <th><button>italic</button></th>
-    <th>
-        <select>
-            <option>20xp</option>
-            
-        </select>
-    </th>
-    <th>
-        <select>
-            <option>arial</option>
-        </select>
-    </th>      
-</table>
+</head>
+
 <body>
-    <form>
-        <br>
-        <textarea cols="50" rows="20"></textarea>
-    </form>
-</body>
+    <div class="l">
+    <img src="https://gomycode.tn/images/section2GMCLogo.png" alt="" class="logo">
+    <ul>
+        <li><a href="index.html">index</a></li>
+        <li><a href="courses.html">courses </a></li>
+        <li> <a href="contact.html">contact</a> </li>
+    </ul>
+    </div>
+    <center>
+    <table>
+        <th>
+            <p id="bold"> <button onclick="makebold()">bold</button>
+        </th>
+        </p>
+        <th>  <button  onclick="makeunderline()" >underline</button></th>
+        <th><button onclick="makeitalic()">italic</button></th>
+        <th>
+            <select onchange="fontsize()" id="size">
+                <option value="20px">20px</option>
+                <option value="30px" >30px</option>
+                <option value="40px" >40px</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="policesize()" id="police" >
+                <option value="arial">arial</option>
+                <option value="verdana">verdana </option>
+                <option value="geneva"> geneva </option>
+            </select>
+        </th>
+    </table>
+
+    <body>
+        <form>
+            <br>
+            <textarea cols="50" rows="20" id="para"></textarea>
+        </form>
+        <script src="js/main.js"></script>
+    </body>
+</center>
